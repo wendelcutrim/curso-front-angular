@@ -1,0 +1,67 @@
+h1 {
+  color: white;
+  background-color: rgba(83, 13, 129, 0.337);
+  font-size: 52px;
+}
+
+p {
+  font-family: Arial, sans-serif, arial;
+  font-weight: 400;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: green;
+}
+
+#texto-azul {
+  color: blue;
+}
+
+.texto-vermelho {
+  color: red;
+}
+
+.titulo {
+  color: #fff;
+  background-color: black;
+}
+
+/* .div-destaque {
+  border: 2px solid red;
+} */
+
+.titulo.div-destaque {
+  border: 2px solid red;
+}
+
+/* div.titulo {
+  border: 2px solid red;
+} */
+
+.texto-destaque {
+  font-style: italic;
+}
+
+.lh-25 {
+  line-height: 25px;
+}
+
+.imagem-landscape {
+  background-image: url("https://img.freepik.com/fotos-gratis/uma-pintura-de-um-lago-de-montanha-com-uma-montanha-ao-fundo_188544-9126.jpg");
+
+  /* background-size: 200px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: bottom right; */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.imagem-fundo {
+  img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+  }
+}
