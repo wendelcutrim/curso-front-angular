@@ -1,0 +1,46 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.container-image {
+    margin-bottom: 24px;
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.title h1 {
+    font-size: 49px;
+    font-family: "Inter", sans-serif;
+}
+
+/* .title h1 strong {
+    color: #6c63ff;
+} */
+
+.roxo {
+    color: #6c63ff;
+}
+
+.texto {
+    color: #7d7987;
+    margin-bottom: 72px;
+}
+
+.texto__container {
+    margin-bottom: 45px;
+}
+
+footer a {
+    color: #6c63ff;
+    margin-right: 10px;
+}
+
+hr {
+    width: 592px;
+    border: 1px solid #eceff2;
+}
