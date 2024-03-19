@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border: 2px solid black;
+    padding: 16px;
+    margin: 16px 0;
+    width: 500px;
+}
+
+img {
+    width: 120px;
+}
+
+p {
+    border: 2px solid blue;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.div-image {
+    border: 2px dotted blue;
+    width: 160px;
+    height: 160px;
+    background-color: pink;
+}
