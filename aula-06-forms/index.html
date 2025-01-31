@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="form-login">
+            <p id="loading">carregando...</p>
+            <form id="loginForm">
+                <label for="labelNome">Nome:</label>
+                <input type="text" name="nome" id="labelNome" />
+                <br />
+                <br />
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" />
+                <br />
+                <br />
+
+                <label for="valor">Valor:</label>
+                <input type="number" name="senha" id="valor" />
+                <br />
+                <br />
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="seu-email@mail.com"
+                />
+                <br />
+                <br />
+
+                <label for="viagem">Data da viagem:</label>
+                <input
+                    type="date"
+                    id="date"
+                    min="2018-01-01"
+                    max="2025-12-31"
+                />
+
+                <br />
+                <br />
+            </form>
+
+            <form id="produto">
+                <p>Cor</p>
+                <label
+                    >Branco
+                    <input type="radio" name="cor-fone" value="branco" />
+                </label>
+                <label for=""
+                    >azul
+                    <input type="radio" name="cor-fone" value="azul" />
+                </label>
+                <label for=""
+                    >Vermelho
+                    <input type="radio" name="cor-fone" value="vermelho" />
+                </label>
+                <label for=""
+                    >Preto
+                    <input type="radio" name="cor-fone" value="preto" />
+                </label>
+
+                <p>Horário de trabalho</p>
+                <label for="D">Diurno</label>
+                <input type="checkbox" name="diurno" id="D" />
+                <label for="N">Noturno</label>
+                <input type="checkbox" name="noturno" id="N" />
+            </form>
+
+            <ul id="produtos"></ul>
+        </section>
+
+        <script>
+            const inputDiurno = document.querySelector("#D");
+
+            inputDiurno.addEventListener("click", (evt) => {
+                console.log(evt);
+            });
+        </script>
+
+        <!-- <script>
+            const baseUrl = "https://fakestoreapi.com";
+            const formLogin = document.querySelector("#formLogin");
+            const nome = document.querySelector("#labelNome");
+            const email = document.querySelector("#email");
+
+            const responseBackend = {
+                nome: "Wendel",
+                email: "wendel@mail.com",
+            };
+
+            nome.addEventListener("change", (event) => {
+                console.log(event);
+            });
+
+            function alertOla() {
+                alert("Ola");
+            }
+
+            /* setTimeout(() => {
+                nome.value = responseBackend.nome;
+                email.value = responseBackend.email;
+            }, 3000); */
+
+            async function obterProdutos() {
+                const response = await fetch(baseUrl + "/products");
+                const products = await response.json();
+
+                const ul = document.querySelector("#produtos");
+
+                products.forEach((p) => {
+                    const li = `<li>${p.title}</li>`;
+
+                    ul.innerHTML += li;
+                });
+            }
+
+            function teste() {
+                console.log("teste");
+            }
+
+            obterProdutos();
+            teste();
+            // alertOla();
+        </script> -->
+    </body>
+</html>
