@@ -25,24 +25,159 @@
                 padding: 10px;
                 border: 2px solid black;
             }
+
+            .form__login .input__wrapper input:active {
+                border: 2px solid blue;
+                background-color: #ccc;
+                color: white;
+            }
+
+            .form__login .input__wrapper input:focus {
+                border: 2px solid green;
+                background-color: orange;
+                color: blue;
+                padding: 20px;
+            }
+
+            /* .input__wrapper:hover {
+                border: 2px solid red;
+            } */
+
+            a:visited {
+                color: green;
+            }
+
+            button:hover {
+                padding: 40px;
+                background-color: blueviolet;
+                color: white;
+            }
         </style>
     </head>
     <body>
+        <a href="#" style="font-size: 42px; margin-bottom: 20px">Teste</a>
+
         <form id="login" class="form__login">
             <h2>Login</h2>
+
             <div class="input__wrapper">
-                <label for="nome">Nome</label>
-                <input
-                    type="text"
-                    name="nome"
-                    id="nome"
-                    placeholder="insira o seu nomne"
-                />
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
             </div>
 
             <div class="input__wrapper">
                 <label for="password">Senha</label>
-                <input type="text" name="password" id="password" />
+                <input type="password" name="password" id="password" />
+            </div>
+        </form>
+
+        <form id="produto">
+            <h2>Selecione a cor:</h2>
+            <br />
+            <label for="vermelho">Vermelho</label>
+            <input type="radio" name="cor" id="vermelho" value="vermelho" />
+
+            <label for="azul">Azul</label>
+            <input type="radio" name="cor" id="azul" value="azul" />
+
+            <label for="preto">Preto</label>
+            <input type="radio" name="cor" id="preto" value="preto" />
+        </form>
+
+        <form id="periodo">
+            <h2>Selecione um período:</h2>
+            <br />
+
+            <label for="diurno">Diurno</label>
+            <input type="checkbox" name="diurno" id="diurno" />
+
+            <label for="boturno">Noturno</label>
+            <input type="checkbox" name="noturno" id="noturno" />
+        </form>
+
+        <form class="form__login" id="faleComNosco" style="width: 300px">
+            <h2>Fale com nosco</h2>
+            <div class="input__wrapper">
+                <label for="motivo">Motivo do contato</label>
+                <select name="motivo" id="motivo">
+                    <option selected disabled>Selecione um motivo</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="suporte">Suporte</option>
+                    <option value="elogio">Elogio</option>
+                </select>
+            </div>
+
+            <div class="input__wrapper">
+                <label for="faqNome">Nome</label>
+                <input
+                    type="text"
+                    name="faqNome"
+                    id="faqNome"
+                    placeholder="Digite o seu nome completo"
+                />
+            </div>
+
+            <div class="input__wrapper">
+                <label for="faqTel">Telefone</label>
+                <input
+                    type="text"
+                    name="faqTel"
+                    id="faqTel"
+                    placeholder="(43) 99999-9999"
+                />
+            </div>
+
+            <div class="input__wrapper">
+                <label for="faqMessage">Mensagem</label>
+                <textarea
+                    name="faqMessage"
+                    id="faqMessage"
+                    style="height: 120px; resize: none"
+                ></textarea>
+                <!-- <input type="text" name="faqMessage" id="faqMessage" /> -->
+            </div>
+            <div class="input__wrapper">
+                <label
+                    for="upload"
+                    style="
+                        padding: 20px;
+                        background-color: #c4c4c4;
+                        color: white;
+                        cursor: pointer;
+                    "
+                    >Escolha o arquivo</label
+                >
+                <input
+                    type="file"
+                    name="upload"
+                    id="upload"
+                    style="
+                        visibility: hidden;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+                        top: 0;
+                    "
+                    tabindex="-1"
+                />
+            </div>
+
+            <button type="reset">limpar</button>
+            <button type="button">Tipo button</button>
+            <button type="submit">Enviar</button>
+
+            <div
+                style="
+                    width: 300px;
+                    background-color: #e5e5e5;
+                    color: black;
+                    text-align: center;
+                    border: 1px solid black;
+                "
+                role="button"
+                tabindex="0"
+            >
+                Teste botão
             </div>
         </form>
     </body>
